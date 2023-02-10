@@ -479,7 +479,7 @@ public class ServiceControllerServer extends IntentService {
                                     }
                                     server.notifyCharacteristicChanged(device,characteristic,true);
                                     server.sendResponse(device, requestId, BluetoothGatt.GATT_SUCCESS, offset, new Date().toLocaleString().toString().getBytes(StandardCharsets.UTF_8));
-                                    server.cancelConnection(device);//
+                                    server.cancelConnection(device);////
                                    /// server.close();
                                 }
 
